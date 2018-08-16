@@ -541,3 +541,17 @@ $(document).ready(function() {
       offset: '200px;'
     });
 });
+
+$(document).on('click', '.flip', function () {
+  var card = $(this).closest('.card');
+  if (card.hasClass('flip-it')) card.removeClass('flip-it');else
+  card.addClass('flip-it');
+});
+
+
+$('.card').each(function () {
+  var href = $(this).data('href');
+  $(this).find('.image').css({
+    backgroundImage: ['url(', href, ')'].join('') });
+
+});

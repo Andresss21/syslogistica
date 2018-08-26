@@ -543,12 +543,16 @@ form,
   left: 0;
   right: 0;
   bottom: 0;
-  background: #050505;
+  background-color:#000;
   z-index: 800;
   height: 100%;
   width: 100%;
 }
-
+.top-img{
+   position: absolute;
+   left: 30%;
+   top: 30%;
+}
 .no-js #preloader,
 .oldie #preloader {
   display: none;
